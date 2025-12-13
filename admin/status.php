@@ -109,6 +109,7 @@
                             </div>
 
                             <div class="flex-col col-md-4">
+                            <h2 class="text-gray-700 font-semibold mt-4">Pick Up Order</h2>
                             <div class="">
                                 <div class="card-body">
                                 <div class="table-responsive">
@@ -145,7 +146,7 @@
                                 </div>
                             </div>
 
-                            <h2 class="mt-2 text-gray-700 font-medium">Order Selesai</h2>
+                            <h2 class=" text-gray-700 font-semibold">Order Selesai</h2>
                             <div class="">
                                 <div class="card-body">
                                 <div class="table-responsive">
