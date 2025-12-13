@@ -45,12 +45,17 @@
 
         if ($upload_ok && move_uploaded_file($file_tmp, $target_file)) {
             $path_in_db = "uploads/" . $file_name;
-            $query = "INSERT INTO products (name, description, price, id_category, image, stock) VALUES ('$nama', '$description', '$price', '$category','$path_in_db', '$stock')";
+            $query = "UPDATE products SET `name` = '$nama', description = '$description', price = '$price', id_category = '$category', image = '$path_in_db', stock = '$stock' WHERE id_product = '$id'";
             mysqli_query($conn, $query);
 
+            
             $update_error = False;
             $update_message = "Berhasil melakukan update Product!";
-            header('Location: inventory.php');
+            echo "
+                    <script>
+                        window.location.href = 'inventory.php';
+                    </script>
+                ";
         } else {
             $update_error = True;
             $update_message = "Gagal melakukan update! Coba lagi.";
