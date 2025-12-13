@@ -24,8 +24,11 @@
         $update_dataUser = mysqli_query($conn, "UPDATE users SET username = '$update_username', email = '$update_email' WHERE id_user = '$id'");
 
         if($update_dataUser) {
-            $update_error = False;
-            $update_message = "Berhasil melakukan edit data User!";
+            echo "
+                    <script>
+                        window.location.href = 'users.php';
+                    </script>
+                ";
         } else {
             $update_error = True;
             $update_message = "Gagal melakukan edit! Coba lagi.";
