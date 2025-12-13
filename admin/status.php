@@ -71,7 +71,7 @@
                                             while ($row_order = mysqli_fetch_assoc($data_orders)) { 
                                                 ?>
                                                 <tr class="font-light">
-                                                    <td><?= $row_order['id_order'] ?></td>
+                                                    <td>#<?= $row_order['id_order'] ?></td>
                                                     <td><?= $row_order['name'] ?></td>
                                                     <td>
                                                         <?php
@@ -109,7 +109,7 @@
                             </div>
 
                             <div class="flex-col col-md-4">
-                            <h2 class="text-gray-700 font-semibold mt-4">Pick Up Order</h2>
+                            <h2 class="text-gray-700 font-semibold mt-4">Waiting for Pick Up</h2>
                             <div class="">
                                 <div class="card-body">
                                 <div class="table-responsive">

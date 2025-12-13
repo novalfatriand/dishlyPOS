@@ -108,7 +108,7 @@
                                     <span class="text-gray-900" id="cart-total">Rp 0</span>
                                 </div>
 
-                                <button id="checkout-btn" class="text-white w-full bg-orange-500 hover:bg-orange-600 font-medium rounded-xl text-sm px-4 py-2.5 me-2 mt-3 mb-2 category-btn">Checkout</button>
+                                <button id="checkout-btn" class="text-white w-full bg-orange-500 hover:bg-orange-600 font-medium rounded-xl text-sm px-4 py-2.5 me-2 mt-3 mb-2">Checkout</button>
 
                                 <form id="checkout-form" action="../services/checkout.php" method="POST" style="display:none;">
                                     <input type="hidden" name="cart_data" id="cart-data">
@@ -245,7 +245,3 @@
     });
 
 </script>
-
-
-
-<?php include "../layout/footer.php" ?>
