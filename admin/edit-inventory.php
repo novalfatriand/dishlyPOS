@@ -10,11 +10,12 @@
 
         $data_products = mysqli_query($conn, "SELECT * FROM products WHERE id_product = '$id'");
         $product = mysqli_fetch_assoc($data_products);
+        $id_categoryAwal = $product['id_category'];
 
-        $data_category = mysqli_query($conn, "SELECT * FROM category");
+        $query_cat = mysqli_query($conn, "SELECT * FROM category WHERE id_category = '$id_categoryAwal'");
+        $idCat = mysqli_fetch_assoc($query_cat);
 
-        $detailCat = mysqli_query($conn, "SELECT * FROM category WHERE id_category = '$id'");
-        $cat = mysqli_fetch_assoc($detailCat);
+        $detailCat = mysqli_query($conn, "SELECT * FROM category");
     }
 
 
@@ -107,9 +108,9 @@
                                             <div class="mb-3">
                                                 <label for="exampleInputNamaDokter1" class="form-label">Category</label>
                                                 <select name="category" id="exampleInputNamaDokter1" class="form-control rounded-full" required>
-                                                    <option value="<?= $cat['id_category'] ?>"><?= $cat['nama_category'] ?></option>
-                                                    <?php while($category_result = mysqli_fetch_assoc($data_category)) { ?>
-                                                        <option value="<?php echo $category_result['id_category'] ?>"><?php echo $category_result['nama_category'] ?></option>
+                                                    <option value="<?= $idCat['id_category'] ?>" disabled><?= $idCat['nama_category'] ?></option>
+                                                    <?php while($cat = mysqli_fetch_assoc($detailCat)) { ?>
+                                                        <option value="<?= $cat['id_category'] ?>"><?= $cat['nama_category'] ?></option>
                                                     <?php } ?>
                                                 </select>
                                             </div>

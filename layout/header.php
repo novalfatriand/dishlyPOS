@@ -36,7 +36,7 @@
             $query = "INSERT INTO products (name, description, price, id_category, image, stock) VALUES ('$nama', '$description', '$price', '$category','$path_in_db', '$stock')";
             mysqli_query($conn, $query);
 
-            echo "<script>alert('Data berhasil ditambahkan!'); window.location='../admin/inventory.php';</script>";
+            echo "<script>window.location='../admin/inventory.php';</script>";
         } else {
             echo "<script>alert('Gagal mengupload gambar.');</script>";
         }
