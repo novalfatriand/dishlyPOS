@@ -1,0 +1,48 @@
+:root
+body{
+    min-height: 100%;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+[data-accordion-target][aria-expanded="true"] {
+  background-color: rgb(54, 53, 53); /* gray-900 */
+  color: rgb(255, 255, 255);
+}
+
+#hero{
+    font-family: "Nunito", sans-serif;
+}
+
+.time-slot {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .time-slot input[type="radio"] {
+      display: none;
+    }
+
+    .time-slot label {
+      display: inline-block;
+      flex: 1 1 30%;
+      text-align: center;
+      padding: 12px 0;
+      border: 1px solid #ff0000;
+      border-radius: 8px;
+      background-color: #fff;
+      color: #ff0000;
+      font-weight: light;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .time-slot label:hover {
+      background-color: #ffe9e9;
+    }
+
+    .time-slot input[type="radio"]:checked + label {
+      background-color: #ff0000;
+      color: #fff;
+      box-shadow: 0 2px 6px rgba(255, 0, 0, 0.4);
+    }

@@ -1,0 +1,107 @@
+/* * {
+    font-family: 'Poppins', sans-serif;
+} */
+
+.login {
+    height: 100vh;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    color: black;
+}
+
+.login-form label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: black;
+    margin-top: 20px;
+}
+
+.login-form input {
+    background: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.login-left {
+    width : 40%;
+}
+
+.login-right {
+    width : 60%;
+    font-family: "Nunito", sans-serif !important;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.login-left {
+  width: 40%;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* penting agar bisa posisikan logo absolut */
+  text-align: center;
+  box-shadow: 15px 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.login-left .logo {
+  position: absolute;
+  top: 20px;      /* jarak dari atas */
+  left: 30px;     /* jarak dari kiri */
+  width: 120px;   /* ubah sesuai kebutuhan ukuran */
+  height: auto;
+}
+
+
+/* Teks welcome */
+.welcome-text h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.welcome-text p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.inputfield {
+    height: 50px;
+    border-radius: 40px !important;
+    padding-left: 25px;
+}
+
+.buttonMasuk {
+    width: 50%;
+    height: 45px;
+    margin-top: 40px;
+    background: #000000;
+    color: #FFFFFF;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: lighter;
+    display: block;        /* pastikan elemen dianggap blok */
+    margin-left: auto;     /* otomatis menengahkan ke kiri-kanan */
+    margin-right: auto;    /* otomatis menengahkan ke kiri-kanan */
+}
+.merkHeading {
+    font-family: "Nunito", sans-serif !important;
+}

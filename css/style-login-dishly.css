@@ -1,0 +1,149 @@
+.login {
+    height: 100vh;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  font-family: "poppins";
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    color: black;
+}
+
+.login-form label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: black;
+    margin-top: 20px;
+}
+
+.login-form input {
+    background: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.login-left {
+    width : 40%;
+    font-family: "poppins";
+    background: linear-gradient(135deg, #ffe7e7 0%, #ffd3d3 40%, #ffffff 100%);
+    position: relative;
+    overflow: hidden; /* DITAMBAHKAN: agar elemen dekoratif tidak keluar */
+}
+
+.login-right {
+    width : 60%;
+    font-family: "poppins", sans-serif !important;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180deg, #ffffff 70%, #fff2f2);
+}
+
+.login-left {
+  width: 40%;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  box-shadow: 15px 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.login-left .logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 120px;
+  height: auto;
+}
+
+/* DITAMBAHKAN: Style untuk badge service */
+.service-badge {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 15px rgba(229, 57, 53, 0.2);
+  z-index: 10;
+}
+
+.service-badge span {
+  color: #e53935;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Teks welcome */
+.welcome-text h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 10px;
+  z-index: 5; /* DITAMBAHKAN: agar tetap di atas gambar */
+  position: relative;
+  color: black; /* DIUBAH: warna menjadi putih */
+}
+
+.welcome-text p {
+  font-size: 14px;
+  color: black; /* DIUBAH: warna menjadi putih */
+  line-height: 1.6;
+  z-index: 5; /* DITAMBAHKAN */
+  position: relative;
+}
+
+.inputfield {
+    height: 50px;
+    border-radius: 40px !important;
+    padding-left: 25px;
+}
+
+.buttonMasuk {
+    width: 50%;
+    height: 45px;
+    margin-top: 40px;
+    background: #e53935;
+    color: #FFFFFF;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: lighter;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none; /* DITAMBAHKAN */
+}
+
+.buttonMasuk:hover {
+  background: #c62828;
+}
+
+/* DITAMBAHKAN: Responsive design */
+@media (max-width: 768px) {
+  .login-left, .login-right {
+    width: 100%;
+  }
+
+  .welcome-text h1 {
+    font-size: 28px;
+  }
+}
