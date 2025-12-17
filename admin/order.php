@@ -2,7 +2,7 @@
 
     include "../layout/header.php";
 
-    $_SESSION['title'] = 'Dishly • Order';
+    $_SESSION['title'] = 'Dishly • Order!';
 
 ?>    
                 
