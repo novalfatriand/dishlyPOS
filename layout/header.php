@@ -53,7 +53,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" href="../img/autoturner_logo_white.png" type="image/icon type">
+        <link rel="icon" href="../img/dishly_logo.png" type="image/icon type">
         <title><?php echo $_SESSION['title'] ?></title>
         <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
         <link
