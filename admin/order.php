@@ -28,12 +28,14 @@
                                     <?php 
                                     $queryProductEtalase = mysqli_query($conn, "SELECT * FROM products WHERE id_category = 1");
                                     while($productEtalase = mysqli_fetch_assoc($queryProductEtalase)) { ?>
-                                        <div class="product bg-white rounded-md w-40 h-48 p-4 items-center flex flex-col justify-center cursor-pointer"
+                                        <div class="product bg-white rounded-md w-40 h-52 p-4 flex flex-col cursor-pointer"
                                             data-id="<?= $productEtalase['id_product'] ?>"
                                             data-name="<?= $productEtalase['name'] ?>"
                                             data-price="<?= $productEtalase['price'] ?>"
                                             data-image="../<?= $productEtalase['image'] ?>">
-                                            <img class="object-cover poster rounded-lg h-20 w-20 mb-4 md:mb-0 z-0" src="../<?= $productEtalase['image'] ?>" alt="Product Image">
+                                            <div class="flex items-center justify-center content-center">
+                                                <img class="object-cover poster rounded-lg h-20 w-20 mb-4 md:mb-0 z-0" src="../<?= $productEtalase['image'] ?>" alt="Product Image">
+                                            </div>
                                             <div class="justify-start">
                                                 <h1 class="font-semibold text-black"><?= $productEtalase['name'] ?></h1>
                                                 <h1 class="font-semibold text-sm mt-2 text-orange-500">Rp <?= number_format($productEtalase['price'], 0, ',', '.') ?></h1>
@@ -51,13 +53,15 @@
                                     <?php 
                                     $queryProductEtalase = mysqli_query($conn, "SELECT * FROM products WHERE id_category = 2");
                                     while($productEtalase = mysqli_fetch_assoc($queryProductEtalase)) { ?>
-                                        <div class="product bg-green-500 rounded-md w-40 h-48 p-4 flex flex-col justify-center cursor-pointer" 
+                                        <div class="product bg-white rounded-md w-40 h-52 p-4 flex flex-col cursor-pointer" 
                                             data-id="<?= $productEtalase['id_product'] ?>"
                                             data-name="<?= $productEtalase['name'] ?>"
                                             data-price="<?= $productEtalase['price'] ?>"
                                             data-image="../<?= $productEtalase['image'] ?>">
-                                            <img class="object-cover items-center poster rounded-lg h-20 w-20 mb-4 md:mb-0 z-0" src="../<?= $productEtalase['image'] ?>" alt="Product Image">
-                                            <div class=" bg-pink-400">
+                                            <div class="flex justify-center items-center content-center">
+                                                <img class="object-cover poster rounded-lg h-20 w-20 mb-4 md:mb-0 z-0" src="../<?= $productEtalase['image'] ?>" alt="Product Image">
+                                            </div>
+                                            <div class="justify-start">
                                                 <h1 class="font-semibold text-black"><?= $productEtalase['name'] ?></h1>
                                                 <h1 class="font-semibold text-sm mt-2 text-orange-500">Rp <?= number_format($productEtalase['price'], 0, ',', '.') ?></h1>
                                             </div>
@@ -74,12 +78,14 @@
                                     <?php 
                                     $queryProductEtalase = mysqli_query($conn, "SELECT * FROM products WHERE id_category = 3");
                                     while($productEtalase = mysqli_fetch_assoc($queryProductEtalase)) { ?>
-                                        <div class="product bg-white rounded-md w-40 h-48 p-4 items-center flex flex-col justify-center cursor-pointer"
+                                        <div class="product bg-white rounded-md w-40 h-52 p-4 flex flex-col cursor-pointer"
                                             data-id="<?= $productEtalase['id_product'] ?>"
                                             data-name="<?= $productEtalase['name'] ?>"
                                             data-price="<?= $productEtalase['price'] ?>"
                                             data-image="../<?= $productEtalase['image'] ?>">
-                                            <img class="object-cover poster rounded-lg h-20 w-20 mb-4 md:mb-0 z-0" src="../<?= $productEtalase['image'] ?>" alt="Product Image">
+                                            <div class="flex items-center justify-center content-center">
+                                                <img class="object-cover poster rounded-lg h-20 w-20 mb-4 md:mb-0 z-0" src="../<?= $productEtalase['image'] ?>" alt="Product Image">
+                                            </div>
                                             <div class="justify-start">
                                                 <h1 class="font-semibold text-black"><?= $productEtalase['name'] ?></h1>
                                                 <h1 class="font-semibold text-sm mt-2 text-orange-500">Rp <?= number_format($productEtalase['price'], 0, ',', '.') ?></h1>

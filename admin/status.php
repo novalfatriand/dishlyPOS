@@ -127,7 +127,7 @@
                                             while ($row_order = mysqli_fetch_assoc($data_orders)) { 
                                                 ?>
                                                 <tr class="font-light">
-                                                    <td><?= $row_order['id_order'] ?></td>
+                                                    <td>#<?= $row_order['id_order'] ?></td>
                                                     <td><?= $row_order['name'] ?></td>
                                                     <td>
                                                         <?php
@@ -164,7 +164,7 @@
                                             while ($row_order = mysqli_fetch_assoc($data_orders)) { 
                                                 ?>
                                                 <tr class="font-light">
-                                                    <td><?= $row_order['id_order'] ?></td>
+                                                    <td>#<?= $row_order['id_order'] ?></td>
                                                     <td><?= $row_order['name'] ?></td>
                                                     <td>
                                                         <?php
