@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 13, 2025 at 02:59 AM
+-- Generation Time: Jan 09, 2026 at 05:13 PM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.16
 
@@ -60,7 +60,7 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id_order`, `order_date`, `name`, `status`, `total_price`) VALUES
-(7, '2025-12-09', 'rangga', 'Done', 27000.00);
+(11, '2026-01-09', 'john', 'On Progress', 27000.00);
 
 -- --------------------------------------------------------
 
@@ -93,7 +93,15 @@ INSERT INTO `order_items` (`id_items`, `id_order`, `id_product`, `quantity`, `pr
 (10, 5, 20, 1, 42000.00),
 (11, 6, 6, 1, 7500.00),
 (12, 6, 11, 1, 21000.00),
-(13, 7, 1, 1, 27000.00);
+(13, 7, 1, 1, 27000.00),
+(14, 8, 1, 1, 27000.00),
+(15, 8, 4, 1, 34000.00),
+(16, 8, 20, 21, 42000.00),
+(17, 9, 1, 1, 27000.00),
+(18, 9, 4, 1, 34000.00),
+(19, 10, 1, 1, 27000.00),
+(20, 10, 5, 1, 8000.00),
+(21, 11, 1, 1, 27000.00);
 
 -- --------------------------------------------------------
 
@@ -117,11 +125,11 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id_product`, `id_category`, `name`, `description`, `price`, `image`, `stock`, `created_at`) VALUES
-(1, 1, 'Burger Gokil', 'Perpaduan antara Beef dengan Double Cheesemelt', 27000.00, 'uploads/burger.jpg', 17, '2025-12-08 04:33:25'),
-(2, 3, 'French Fries', 'Kentang Goreng pilihan terbaik ', 18000.00, 'uploads/kentang.jpg', 19, '2025-12-08 07:09:27'),
+(1, 1, 'Burger Gokil', 'Perpaduan antara Beef dengan Double Cheesemelt', 27000.00, 'uploads/burger.jpg', 13, '2025-12-08 04:33:25'),
+(2, 2, 'French Fries', 'Kentang Goreng pilihan terbaik ', 18000.00, 'uploads/kentang.jpg', 22, '2025-12-08 07:09:27'),
 (3, 3, 'Dishly Donat', 'Paket 5 donat kesukaan kamu, pilih sebebasnya!', 20000.00, 'uploads/donat.jpg', 20, '2025-12-08 07:10:12'),
-(4, 1, 'Ramen Bowl', 'Mie Ramen + Rumput Laut + Telur setengah matang terbaik', 34000.00, 'uploads/ramenbowl.jpg', 18, '2025-12-08 07:11:02'),
-(5, 2, 'Pepsi', 'Soda Segar dengan tambahan Lemonade', 8000.00, 'uploads/pepsi.jpg', 28, '2025-12-08 07:11:40'),
+(4, 1, 'Ramen Bowl', 'Mie Ramen + Rumput Laut + Telur setengah matang terbaik', 34000.00, 'uploads/ramenbowl.jpg', 16, '2025-12-08 07:11:02'),
+(5, 2, 'Pepsi', 'Soda Segar dengan tambahan Lemonade', 8000.00, 'uploads/pepsi.jpg', 27, '2025-12-08 07:11:40'),
 (6, 2, 'Sprite', 'Minuman Lemon bersoda', 7500.00, 'uploads/sprite.jpg', 25, '2025-12-08 07:20:16'),
 (7, 3, 'Dimsum', 'Dimsum 4 Pcs', 15000.00, 'uploads/dimsum.jpg', 20, '2025-12-08 13:12:00'),
 (8, 3, 'Ice Cream Cup', 'Ice Cream Cup', 18000.00, 'uploads/icecreamcup.jpg', 30, '2025-12-08 13:13:16'),
@@ -130,11 +138,11 @@ INSERT INTO `products` (`id_product`, `id_category`, `name`, `description`, `pri
 (11, 2, 'Ice Americano', '2 Shot Americano', 21000.00, 'uploads/americano.jpg', 19, '2025-12-08 13:18:13'),
 (13, 2, 'Matcha Latte', 'Matcha', 33000.00, 'uploads/matchalatte.jpg', 20, '2025-12-08 13:19:17'),
 (14, 2, 'Oreo Smoothie', 'Oreo + Cream', 32000.00, 'uploads/oreosmoothie.jpg', 20, '2025-12-08 13:21:58'),
-(15, 2, 'Coffee Latte', 'Coffee + Milk', 33000.00, 'uploads/coffee latte.jpg', 20, '2025-12-08 13:22:32'),
 (16, 2, 'Kopi Aren', 'Coffee + Milk + Aren Sugar', 30000.00, 'uploads/kopi gula aren.jpg', 20, '2025-12-08 13:23:14'),
-(20, 1, 'Nasi Goreng', 'Nasi Goreng', 42000.00, 'uploads/nasigorengpattaya.jpg', 13, '2025-12-08 13:38:45'),
+(20, 1, 'Nasi Goreng', 'Nasi Goreng', 42000.00, 'uploads/nasigorengpattaya.jpg', -8, '2025-12-08 13:38:45'),
 (21, 1, 'Chicken Wings', '8 Chicken Wings + Barbeque Sauce', 50000.00, 'uploads/chickenwings.jpg', 18, '2025-12-08 13:39:47'),
-(23, 3, 'Dumplings', 'Dumplings', 36000.00, 'uploads/frieddumplings.jpg', 20, '2025-12-08 13:46:22');
+(23, 1, 'Dumplings', 'Dumplings', 36000.00, 'uploads/frieddumplings.jpg', 36, '2025-12-08 13:46:22'),
+(27, 1, 'Nasi Goreng Pattaya', 'Nasi Goreng', 34000.00, 'uploads/spaghettibolognese.jpg', 20, '2025-12-17 12:58:39');
 
 -- --------------------------------------------------------
 
@@ -155,7 +163,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_user`, `username`, `email`, `password`, `created_at`) VALUES
-(8, 'noval', 'noval@gmail.com', '$2y$10$5mzDwSyR9JdN/bMKnnCy7ut7TSn1QOMMCJUG/dIcXd2x.13E2cTNu', '2025-12-13 02:59:05');
+(8, 'noval', 'noval@gmail.com', '$2y$10$5mzDwSyR9JdN/bMKnnCy7ut7TSn1QOMMCJUG/dIcXd2x.13E2cTNu', '2025-12-13 02:59:05'),
+(10, 'rangga', 'rangga@gmail.com', '$2y$10$WoyOoyJl/XoyAuVbrXnyVe1SpjxVIGPhIHgfUrCK/epsAUWQGclDW', '2026-01-09 04:38:37'),
+(11, 'bintang', 'bintang@gmail.com', '$2y$10$sZgHD8MofVxnTopqTx/BvOxp829wP56YJpqo/M1nrko.AIltHrKEG', '2026-01-09 04:39:00');
 
 --
 -- Indexes for dumped tables
@@ -207,25 +217,25 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id_order` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_order` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `order_items`
 --
 ALTER TABLE `order_items`
-  MODIFY `id_items` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_items` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id_product` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id_product` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Constraints for dumped tables

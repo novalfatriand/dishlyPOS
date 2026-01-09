@@ -87,7 +87,7 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <form method="POST" action="" enctype="multipart/form-data" class="mb-4 overflow-hidden">
+                                <form method="POST" action="" enctype="multipart/form-data" class="mb-4 overflow-hidden px-2">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="mb-3">
